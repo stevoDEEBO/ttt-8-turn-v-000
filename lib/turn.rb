@@ -39,5 +39,6 @@ def turn(board)
       turn(board)
     end
   elsif valid_move?(board, index) == true
-  end    
+    move(board, index, char)
+  end
 end
