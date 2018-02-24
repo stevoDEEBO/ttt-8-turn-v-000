@@ -10,7 +10,7 @@ def input_to_index(num)
   num.to_i - 1
 end
 
-def move(board, index, char)
+def move(board, index, char = "X")
   board[index] = char
 end
 
@@ -36,7 +36,7 @@ def turn(board)
   index = input_to_index(input)
 
   if valid_move?(board, index)
-    move(board, index, char)
+    move(board, index)
     display_board(board)
 
   else
