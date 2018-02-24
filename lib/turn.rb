@@ -41,6 +41,6 @@ def turn(board)
   #  until valid_move?(board, index) == true
   #    turn(board)
   #  end
-    move(board, index, char)
+  #  move(board, index, char)
   end
 end
