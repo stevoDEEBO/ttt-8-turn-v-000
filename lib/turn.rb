@@ -35,15 +35,11 @@ def turn(board)
   input = gets.strip
   index = input_to_index(input)
 
-  if valid_move?(board, index) == true
+  if valid_move?(board, index)
     move(board, index, char)
     display_board(board)
 
   else
-    until valid_move?(board, index) == true
     turn(board)
-    end
-    move(board, index, char)
-    display_board(board)
   end
 end
